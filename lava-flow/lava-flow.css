@@ -1,36 +1,66 @@
 @charset "UTF-8";
 
-* {
-    font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sriracha&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yuji+Mai&display=swap');
+
+:root {
+    --font1: Sriracha, cursive;
 }
 
-body {
-    background-color: white;
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 header {
-    margin: -10px;
-    padding: 20px;
-    background-color: black;
+    margin: -21px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
-    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 60px;
 }
 
 article {
-    line-height: 30px;
+    font-size: 3vw;
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 40px;
 }
 
-.normal {
-    background-color: white;
+article > p {
+    padding-bottom: 2em;
 }
 
 .imagem {
-    background-color: lightgray;
+    background-color: black;
+    color: white;
+    margin: -10px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.imagem#img1 {
+    background-image: url('images/red-fish.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.imagem#img2 {
+    background-image: url('images/magma.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.imagem > p {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    display: inline-block;
+
 }
 
 p {
-    padding: 50px;
+    font-family: var(--font1);
 }
